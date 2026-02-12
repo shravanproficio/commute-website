@@ -197,7 +197,7 @@ h2 {
 }
 
 .logo-track img { 
-    height: 100px; 
+    height: 160px; 
     margin: 0 90px; 
     flex-shrink: 0; 
 }
@@ -418,6 +418,35 @@ h2 {
 
     #banner-video {
         object-position: center center;
+    }
+    .logo-carousel {
+        padding: 40px 0;
+    }
+
+    .logo-track img { 
+        height: 70px; /* Scaled down from the 140px desktop version */
+        margin: 0 40px; 
+    }
+
+    /* 5. Testimonial Cards (Stacking) */
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-left {
+        flex: 1;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 25px;
+    }
+
+    .testimonial-right {
+        padding: 25px;
+    }
+
+    .quote {
+        font-size: 1rem;
     }
 
     /* Mobile Typography & Gaps */
