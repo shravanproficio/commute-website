@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Commute By Proficio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="ChatGPT Image Feb 11, 2026, 04_51_58 PM.png" alt="Proficio Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="testimonials.html" class="nav-cta">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="testimonials-hero">
+        <div class="container">
+            <h2>Trusted by <span class="orange-text">Industry Leaders</span></h2>
+            <p>See how we are transforming corporate commute experiences.</p>
+        </div>
+    </section>
+
+    <section class="strip">
+        <div class="container testimonial-container">
+            
+            <div class="testimonial-card">
+                <div class="testimonial-left">
+                    <img src="shravan.A.jpeg" alt="User Photo" class="client-photo">
+                    <div class="client-info">
+                        <h4>Shravan A</h4>
+                        <p>Product Engineer</p>
+                    </div>
+                    <img src="ChatGPT Image Feb 11, 2026, 04_51_58 PM.png" alt="Company Logo" class="client-company-logo">
+                </div>
+                <div class="testimonial-right">
+                    <p class="quote">"Commute By Proficio has completely transformed how we handle employee transport. The real-time tracking is a game changer for our safety protocols."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-left">
+                    <img src="client2.jpg" alt="User Photo" class="client-photo">
+                    <div class="client-info">
+                        <h4>Sara Williams</h4>
+                        <p>HR Director</p>
+                    </div>
+                    <img src="company-logo2.png" alt="Company Logo" class="client-company-logo">
+                </div>
+                <div class="testimonial-right">
+                    <p class="quote">"The user interface is so intuitive that our employees started using it with zero training. Our transport efficiency increased by 20% in the first month."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        </footer>
+
+    <script>
+        window.onscroll = function() {
+            const header = document.getElementById('main-header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add("shrunk");
+            } else {
+                header.classList.remove("shrunk");
+            }
+        };
+    </script>
+</body>
+</html>
