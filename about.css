@@ -1,0 +1,89 @@
+/* Hero Strip (Blue) */
+.about-hero-strip {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 3rem;
+    color: white !important;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.blue-text-alt {
+    color: #ffffff; 
+}
+
+.about-intro-text {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+.about-vision-strip {
+    background-color: var(--commute-orange);
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.vision-text {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.success-stories-strip {
+    background-color: white;
+    padding: 80px 10%;
+}
+
+.container-narrow {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stories-main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+.story-card {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.story-card h3 {
+    color: var(--primary-blue);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.story-card p {
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.story-card:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .about-heading { font-size: 2.2rem; }
+    .about-hero-strip, .about-vision-strip, .success-stories-strip {
+        padding: 40px 5%;
+    }
+}
