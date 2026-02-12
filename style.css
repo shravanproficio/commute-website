@@ -35,7 +35,7 @@ header {
 }
 
 .logo img { 
-    height: 90px; 
+    height: 180px; 
     width: auto;
     transition: 0.4s ease; 
     display: block;
@@ -47,7 +47,7 @@ header.shrunk {
 }
 
 header.shrunk .logo img { 
-    height: 60px; 
+    height: 130px; 
 }
 
 nav ul { 
@@ -388,26 +388,32 @@ h2 {
 @media (max-width: 768px) {
     /* Slim Mobile Header */
     header { 
-        height: 70px; 
-        padding: 0 4%; 
+        height: 100px; 
+        padding: 0 5%; 
     }
 
     .logo img { 
-        height: 50px; 
+        height: 80px; 
+    }
+    header.shrunk .logo img { 
+        height: 60px; /* Significant enough to notice, small enough to save space */
+    }
+    header.shrunk { 
+        height: 75px; 
     }
     
     /* Compact Mobile Nav */
     nav ul { 
-        gap: 12px; 
+        gap: 8px; 
     }
 
     nav a { 
-        font-size: 0.8rem; 
+        font-size: 0.65rem; 
     }
 
     .nav-cta { 
-        padding: 6px 12px; 
-        font-size: 0.75rem; 
+        padding: 5px 8px; 
+        font-size: 0.60rem; 
     }
 
     /* Smaller Mobile Banner */
@@ -424,7 +430,7 @@ h2 {
     }
 
     .logo-track img { 
-        height: 70px; /* Scaled down from the 140px desktop version */
+        height: 100px; /* Scaled down from the 140px desktop version */
         margin: 0 40px; 
     }
 
