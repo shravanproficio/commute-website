@@ -295,7 +295,7 @@ h2 {
     header { height: 100px; }
     .logo img { height: 37px; }
     header.shrunk { height: 75px; }
-    header.shrunk .logo img { height: 35px; }
+    header.shrunk .logo img { height: 37px; }
 
     nav ul { gap: 8px; }
     nav a { font-size: 0.65rem; }
