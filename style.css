@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden; /* Critical: Prevents horizontal scroll */
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -82,10 +82,15 @@ header.shrunk .logo img {
     height: 50px;
 }
 
+/* Updated: Nav positioning to move items left */
+nav {
+    margin-right: 60px; /* Pulls the menu away from the right edge */
+}
+
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 30px; /* Slightly increased gap for 3 items */
     margin: 0;
     align-items: center;
 }
@@ -121,7 +126,7 @@ nav a:hover {
 #banner-video {
     width: 100%;
     height: 110%;
-    max-width: 100vw; /* Fix: Prevents video from pushing width */
+    max-width: 100vw;
     object-fit: cover;
     display: block;
 }
@@ -292,7 +297,6 @@ h2 {
 
 /* --- Mobile View Enhancements --- */
 @media (max-width: 768px) {
-    /* Lock header height to prevent enlargement on iPhone */
     header { 
         height: 70px !important; 
         display: flex !important;
@@ -300,15 +304,13 @@ h2 {
         padding: 0 15px !important;
     }
 
-    /* Fix: Use max-height so the logo cannot push the header open */
     .logo img { 
         height: auto !important;
-        max-height: 40px !important; /* Adjust this to match your Moto Edge look */
+        max-height: 40px !important;
         width: auto !important;
         display: block;
     }
 
-    /* Shrunk state logic for iPhone */
     header.shrunk { 
         height: 60px !important; 
     }
@@ -317,12 +319,15 @@ h2 {
         max-height: 35px !important; 
     }
 
-    /* Standardize nav for tight screens */
-    nav ul { gap: 8px; }
-    nav a { font-size: 0.7rem; white-space: nowrap; }
-    .nav-cta { padding: 5px 8px; font-size: 0.65rem; }
+    /* Updated: Reset margin for mobile and adjust gaps */
+    nav {
+        margin-right: 0; 
+    }
 
-    /* Video Banner Mobile Optimization */
+    nav ul { gap: 10px; }
+    nav a { font-size: 0.75rem; white-space: nowrap; }
+    .nav-cta { padding: 5px 10px; font-size: 0.7rem; }
+
     .banner { 
         height: 35vh; 
         min-height: 250px; 
@@ -336,10 +341,8 @@ h2 {
     }
 
     .logo-track img { height: 100px; margin: 0 40px; }
-
     h2 { font-size: 1.8rem; }
     
-    /* Optimized Strip Content */
     .container { 
         flex-direction: column !important; 
         text-align: center; 
@@ -358,27 +361,16 @@ h2 {
         flex-direction: column !important;
     }
 
-    /* Counter Mobile Fix: Scale values to fit screen */
     .counter-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 0 10px;
     }
 
-    .counter-value {
-        font-size: 1.8rem; /* Scaled down for mobile width */
-    }
+    .counter-value { font-size: 1.8rem; }
+    .plus-sign { font-size: 1.2rem; }
+    .counter-item p { font-size: 0.7rem; letter-spacing: 0; }
 
-    .plus-sign {
-        font-size: 1.2rem;
-    }
-
-    .counter-item p {
-        font-size: 0.7rem;
-        letter-spacing: 0;
-    }
-
-    /* Centering everything in footer on mobile */
     .footer-container {
         flex-direction: column;
         text-align: center;
