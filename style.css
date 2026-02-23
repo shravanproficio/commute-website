@@ -68,7 +68,7 @@ header {
 }
 
 .logo img {
-    height: 180px;
+    height: 70px;
     width: auto;
     transition: 0.4s ease;
     display: block;
@@ -79,7 +79,7 @@ header.shrunk {
 }
 
 header.shrunk .logo img {
-    height: 130px;
+    height: 50px;
 }
 
 nav ul {
@@ -293,9 +293,9 @@ h2 {
 /* --- Mobile View Enhancements --- */
 @media (max-width: 768px) {
     header { height: 100px; }
-    .logo img { height: 80px; }
+    .logo img { height: 35px; }
     header.shrunk { height: 75px; }
-    header.shrunk .logo img { height: 60px; }
+    header.shrunk .logo img { height: 28px; }
 
     nav ul { gap: 8px; }
     nav a { font-size: 0.65rem; }
