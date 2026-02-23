@@ -293,9 +293,9 @@ h2 {
 /* --- Mobile View Enhancements --- */
 @media (max-width: 768px) {
     header { height: 100px; }
-    .logo img { height: 35px; }
+    .logo img { height: 30px; }
     header.shrunk { height: 75px; }
-    header.shrunk .logo img { height: 35px; }
+    header.shrunk .logo img { height: 30px; }
 
     nav ul { gap: 8px; }
     nav a { font-size: 0.65rem; }
