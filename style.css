@@ -82,15 +82,14 @@ header.shrunk .logo img {
     height: 50px;
 }
 
-/* Updated: Nav positioning to move items left */
 nav {
-    margin-right: 60px; /* Pulls the menu away from the right edge */
+    margin-right: 80px; 
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px; /* Slightly increased gap for 3 items */
+    gap: 35px;
     margin: 0;
     align-items: center;
 }
@@ -257,21 +256,41 @@ h2 {
     margin-top: -5px;
 }
 
-/* --- Footer --- */
+/* --- Footer & Link Styling --- */
 .main-footer {
     background-color: #FF8C00;
     color: #ffffff;
-    padding: 60px 10% 30px;
+    padding: 60px 10% 40px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end; /* Aligns footer-right content to the bottom */
 }
 
 .footer-details {
     margin-top: 20px;
+}
+
+.footer-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between Copyright and Privacy Policy */
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    opacity: 1;
 }
 
 .footer-socials {
@@ -289,10 +308,6 @@ h2 {
 
 .footer-socials a:hover img {
     transform: translateY(-3px);
-}
-
-.footer-right {
-    text-align: right;
 }
 
 /* --- Mobile View Enhancements --- */
@@ -319,7 +334,6 @@ h2 {
         max-height: 35px !important; 
     }
 
-    /* Updated: Reset margin for mobile and adjust gaps */
     nav {
         margin-right: 0; 
     }
@@ -378,7 +392,11 @@ h2 {
         gap: 30px;
     }
 
-    .number-row { justify-content: center; }
+    .footer-right { 
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
     .footer-socials { justify-content: center; }
-    .footer-right { text-align: center; }
-} 
+}
