@@ -292,14 +292,35 @@ h2 {
 
 /* --- Mobile View Enhancements --- */
 @media (max-width: 768px) {
-    header { height: 100px; }
-    .logo img { height: 32px; }
-    header.shrunk { height: 75px; }
-    header.shrunk .logo img { height: 34px; }
+    /* Lock header height to prevent enlargement on iPhone */
+    header { 
+        height: 70px !important; 
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 15px !important;
+    }
 
+    /* Fix: Use max-height so the logo cannot push the header open */
+    .logo img { 
+        height: auto !important;
+        max-height: 40px !important; /* Adjust this to match your Moto Edge look */
+        width: auto !important;
+        display: block;
+    }
+
+    /* Shrunk state logic for iPhone */
+    header.shrunk { 
+        height: 60px !important; 
+    }
+
+    header.shrunk .logo img { 
+        max-height: 35px !important; 
+    }
+
+    /* Standardize nav for tight screens */
     nav ul { gap: 8px; }
-    nav a { font-size: 0.65rem; }
-    .nav-cta { padding: 5px 8px; font-size: 0.60rem; }
+    nav a { font-size: 0.7rem; white-space: nowrap; }
+    .nav-cta { padding: 5px 8px; font-size: 0.65rem; }
 
     /* Video Banner Mobile Optimization */
     .banner { 
